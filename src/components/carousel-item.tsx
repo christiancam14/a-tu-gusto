@@ -50,7 +50,7 @@ const CarouselItem: React.FC<CarouselItemProps> = ({
           draggable="false"
         />
         <img
-          src={`/assets/fruits/fresas.png`}
+          src={`/fruits/fresas.png`}
           alt={item.detail.title}
           className="fruit filter drop-shadow-[10px_10px_10px_rgba(0,0,0,0.2)] md:drop-shadow-[20px_20px_10px_rgba(0,0,0,0.2)]  -translate-y-1/2 -translate-x-36 transition-right duration-[1500ms] max-h-[500px] object-contain"
           width={800}
