@@ -1,3 +1,4 @@
+import useCartStore from "../store/cartStore";
 import { Product } from "../types/product";
 
 interface Props {
@@ -5,13 +6,12 @@ interface Props {
 }
 
 export const ProductCard = ({ product }: Props) => {
+  const addItem = useCartStore((state) => state.addItem);
+
   return (
-    <div className="mx-auto w-full max-w-4xl min-h-80 py-6 px-6 flex justify-center items-center">
+    <div className="mx-auto w-full max-w-4xl h-full py-6 px-6 flex justify-center items-center">
       <div className="flex rounded-lg shadow-xl w-full">
-        <div
-          className="w-1/2 flex flex-col justify-center items-center relative transition-colors duration-300 ease-in-out rounded-tl-lg rounded-bl-lg"
-          style={{ backgroundColor: product.color }}
-        >
+        <div className="w-1/2 flex flex-col justify-center items-center relative transition-colors duration-300 ease-in-out rounded-tl-lg rounded-bl-lg">
           <div className="absolute top-0 left-0 m-4 opacity-10 w-full">
             <img
               src="logo-bn.svg"
@@ -28,31 +28,26 @@ export const ProductCard = ({ product }: Props) => {
 
         <div className="w-1/2 bg-stone-50 p-4 rounded-tr-lg rounded-br-lg flex flex-col justify-between">
           <div className="p-4">
-            <h2
-              className="text-4xl font-bold transition-colors duration-300 ease-in-out"
-              style={{ color: product.color }}
-            >
+            <h2 className="text-4xl font-bold transition-colors duration-300 ease-in-out text-azul">
               {product.name}
             </h2>
-            {/* You might want to make this dynamic too */}
           </div>
 
-          <p className="mx-4 mb-4 mt-6 text-stone-700">{product.description}</p>
+          <p className="mx-4 mb-4 mt-6 text-stone-700 text-azul">
+            {product.description}
+          </p>
 
-          <div className="flex justify-between items-center py-4 px-4">
-            <h2
-              className="text-4xl font-bold transition-colors duration-300 ease-in-out"
-              style={{ color: product.color }}
-            >
-              $ {product.price.toFixed(2)}
-            </h2>
-            <button
-              className="bg-stone-800 text-white rounded-full py-2 px-4 hover:bg-stone-700 transition-colors duration-300 ease-in-out"
-              style={{ backgroundColor: product.color }}
-            >
-              BUY NOW
-            </button>
-          </div>
+          <h2 className="text-2xl font-bold transition-colors duration-300 ease-in-out text-azul">
+            ${product.price.toFixed(2)}
+          </h2>
+
+          <button
+            className="bg-stone-800 text-white rounded-full py-2 px-4 hover:bg-stone-700 transition-colors duration-300 ease-in-out"
+            style={{ backgroundColor: product.color }}
+            onClick={() => addItem(product)}
+          >
+            Agregar al carrito
+          </button>
         </div>
       </div>
     </div>

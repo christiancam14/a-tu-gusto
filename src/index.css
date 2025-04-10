@@ -81,6 +81,18 @@
   background-color: #ff537d !important;
 }
 
+.text-amarillo {
+  color: #ffca4f !important;
+}
+
+.text-azul {
+  color: #00c6da !important;
+}
+
+.text-rojo {
+  color: #ff537d !important;
+}
+
 ::-moz-selection {
   background-color: #ffca4f;
   color: #1f2937;

@@ -25,42 +25,44 @@ export const productsData: ProductsData = {
   Obleas: [
     {
       id: "1",
-      title: "Fresas con Crema as",
-      name: "Oblea de Arequipe",
+      title: "Deliciosa Oblea tradicional",
+      name: "Oblea #1",
       color: "bg-amarillo",
-      description: "",
+      description: "Oblea con arequipe",
       price: 5000,
-      image: "/images/obleas/arequipe.jpg",
+      image: "oblea.webp",
       category: "Obleas",
     },
     {
       id: "2",
       title: "Fresas con Crema as",
-      name: "Oblea de Arequipe, queso",
+      name: "Oblea #2",
       color: "bg-amarillo",
-      description: "",
+      description: "Oblea con arequipe y queso",
       price: 6000,
-      image: "/images/obleas/arequipe_queso.jpg",
+      image: "oblea.webp",
       category: "Obleas",
     },
     {
       id: "3",
       title: "Fresas con Crema as",
-      name: "Oblea de Arequipe, queso, chantilly y salsa de frutos rojos",
+      name: "Oblea #3",
       color: "bg-amarillo",
-      description: "",
+      description:
+        "Oblea con arequipe, queso, chantilly y salsa de frutos rojos",
       price: 7000,
-      image: "/images/obleas/arequipe_queso_chantilly_frutosrojos.jpg",
+      image: "oblea.webp",
       category: "Obleas",
     },
     {
       id: "4",
       title: "Fresas con Crema as",
-      name: "Oblea de Arequipe, queso, salsa de frutos rojos, chantilly, fresa",
+      name: "Oblea #4",
       color: "bg-amarillo",
-      description: "",
+      description:
+        "Oblea con arequipe, queso, salsa de frutos rojos, chantilly y fresa",
       price: 8000,
-      image: "/images/obleas/arequipe_queso_frutosrojos_chantilly_fresa.jpg",
+      image: "oblea.webp",
       category: "Obleas",
     },
   ],
@@ -73,7 +75,7 @@ export const productsData: ProductsData = {
       description:
         "Mango, banano, piña en almíbar, papaya, patilla, melón, crema de la casa, manzana, fresa, queso, granola, kiwi, durazno, chantilly, cereza y 2 sabores de helado.",
       price: 12000,
-      image: "/images/ensaladas/especial.jpg",
+      image: "/images/ensaladas/especial.webp",
       category: "Ensaladas",
     },
     {
@@ -84,7 +86,7 @@ export const productsData: ProductsData = {
       description:
         "Mango, banano, piña en almíbar, papaya, patilla, melón, crema de la casa, manzana, fresa, queso, granola y helado",
       price: 8000,
-      image: "/images/ensaladas/pequena.jpg",
+      image: "/images/ensaladas/pequena.webp",
       category: "Ensaladas",
     },
   ],
@@ -97,7 +99,7 @@ export const productsData: ProductsData = {
       description:
         "Malteada de chocolate, nutella, mini chips, brownie, chantilly, oreo triturada, salsa de arequipe, Galleta oreo, salsa de chocolate.",
       price: 10000,
-      image: "/images/malteadas/brownie.jpg",
+      image: "/images/malteadas/brownie.webp",
       category: "Malteadas",
     },
     {
@@ -108,7 +110,7 @@ export const productsData: ProductsData = {
       description:
         "Malteada de frutos rojos, chantilly, waffle, chocmelos, maní, arequipe, fresas, salsa de chocolate y de frutos rojos",
       price: 11000,
-      image: "/images/malteadas/waffle.jpg",
+      image: "/images/malteadas/waffle.webp",
       category: "Malteadas",
     },
     {
@@ -119,7 +121,7 @@ export const productsData: ProductsData = {
       description:
         "Malteada de 3 leches con ron, nutella, chantilly, oreo triturado, salsa de chocolate, chocmelos, barquillo.",
       price: 12000,
-      image: "/images/malteadas/sweet_ron.jpg",
+      image: "/images/malteadas/sweet_ron.webp",
       category: "Malteadas",
     },
     {
@@ -130,7 +132,7 @@ export const productsData: ProductsData = {
       description:
         "Malteada de vainilla arequipe, m&m's. cono, chantilly, golochips salsa de frutos rojos, marshmallows, pepitas de colores.",
       price: 10000,
-      image: "/images/malteadas/cono.jpg",
+      image: "/images/malteadas/cono.webp",
       category: "Malteadas",
     },
     {
@@ -141,7 +143,7 @@ export const productsData: ProductsData = {
       description:
         "Malteada de maracuyá chantilly, arequipe. chococrispys, salsa de chocolate, chocmelos y fresas.",
       price: 11000,
-      image: "/images/malteadas/strawberry.jpg",
+      image: "/images/malteadas/strawberry.webp",
       category: "Malteadas",
     },
   ],
@@ -153,7 +155,7 @@ export const productsData: ProductsData = {
       color: "bg-amarillo",
       description: "",
       price: 6000,
-      image: "/images/infantil/pollito.jpg",
+      image: "/images/infantil/pollito.webp",
       category: "Infantil",
     },
     {
@@ -163,7 +165,7 @@ export const productsData: ProductsData = {
       color: "bg-amarillo",
       description: "",
       price: 6500,
-      image: "/images/infantil/payasito.jpg",
+      image: "/images/infantil/payasito.webp",
       category: "Infantil",
     },
     {
@@ -173,7 +175,7 @@ export const productsData: ProductsData = {
       color: "bg-amarillo",
       description: "",
       price: 6500,
-      image: "/images/infantil/osito.jpg",
+      image: "/images/infantil/osito.webp",
       category: "Infantil",
     },
     {
@@ -183,7 +185,7 @@ export const productsData: ProductsData = {
       color: "bg-amarillo",
       description: "",
       price: 6000,
-      image: "/images/infantil/aranita.jpg",
+      image: "/images/infantil/aranita.webp",
       category: "Infantil",
     },
     {
@@ -193,7 +195,7 @@ export const productsData: ProductsData = {
       color: "bg-amarillo",
       description: "",
       price: 7000,
-      image: "/images/infantil/buho.jpg",
+      image: "/images/infantil/buho.webp",
       category: "Infantil",
     },
     {
@@ -203,7 +205,7 @@ export const productsData: ProductsData = {
       color: "bg-amarillo",
       description: "",
       price: 7000,
-      image: "/images/infantil/mariposa.jpg",
+      image: "/images/infantil/mariposa.webp",
       category: "Infantil",
     },
     {
@@ -213,7 +215,7 @@ export const productsData: ProductsData = {
       color: "bg-amarillo",
       description: "",
       price: 6500,
-      image: "/images/infantil/gatico.jpg",
+      image: "/images/infantil/gatico.webp",
       category: "Infantil",
     },
     {
@@ -223,7 +225,7 @@ export const productsData: ProductsData = {
       color: "bg-amarillo",
       description: "",
       price: 6000,
-      image: "/images/infantil/gusanito.jpg",
+      image: "/images/infantil/gusanito.webp",
       category: "Infantil",
     },
     {
@@ -233,7 +235,7 @@ export const productsData: ProductsData = {
       color: "bg-amarillo",
       description: "",
       price: 7000,
-      image: "/images/infantil/ratoncito.jpg",
+      image: "/images/infantil/ratoncito.webp",
       category: "Infantil",
     },
   ],
@@ -257,7 +259,7 @@ export const productsData: ProductsData = {
       description:
         "Gelatina, 2 bolas de helado, queso, chantilly, morita, salsa de frutos rojos, pepitas de colores, barquillo, crema de la casa.",
       price: 8500,
-      image: "/images/copas/gelatina_helado.jpg",
+      image: "/images/copas/gelatina_helado.webp",
       category: "Copas",
     },
     {
@@ -268,7 +270,7 @@ export const productsData: ProductsData = {
       description:
         "2 bolas de helado, chantillí, durazno, arequipe, lluvia de chocolate.",
       price: 8000,
-      image: "/images/copas/durazno.jpg",
+      image: "/images/copas/durazno.webp",
       category: "Copas",
     },
     {
@@ -278,7 +280,7 @@ export const productsData: ProductsData = {
       color: "bg-amarillo",
       description: "Chantilly, helado, salsa de frutos rojos, fresa, cereza.",
       price: 7500,
-      image: "/images/copas/fresas_crema.jpg",
+      image: "/images/copas/fresas_crema.webp",
       category: "Copas",
     },
     {
@@ -289,7 +291,7 @@ export const productsData: ProductsData = {
       description:
         "Malteada, crema de baileys, chantilly, oreo triturado, gala.",
       price: 10000,
-      image: "/images/copas/baileys.jpg",
+      image: "/images/copas/baileys.webp",
       category: "Copas",
     },
   ],
@@ -302,7 +304,7 @@ export const productsData: ProductsData = {
       description:
         "Tortilla, salsa de arequipe, salsa de frutos rojos, piña en almíbar, maracuyá, chantilly y helado.",
       price: 9000,
-      image: "/images/crepes/tropical.jpg",
+      image: "/images/crepes/tropical.webp",
       category: "Crepes",
     },
     {
@@ -313,7 +315,7 @@ export const productsData: ProductsData = {
       description:
         "Tortilla, Crema de la casa, Fresa, Crema Chantilly, Salsa de chocolate, Cobertura de chocolate, Helado.",
       price: 9500,
-      image: "/images/crepes/choco_fresa.jpg",
+      image: "/images/crepes/choco_fresa.webp",
       category: "Crepes",
     },
     {
@@ -324,7 +326,7 @@ export const productsData: ProductsData = {
       description:
         "Tortilla, Nutella, banano, fresa, salsa de chocolate, chantilly y helado.",
       price: 10000,
-      image: "/images/crepes/nutella.jpg",
+      image: "/images/crepes/nutella.webp",
       category: "Crepes",
     },
   ],
@@ -337,7 +339,7 @@ export const productsData: ProductsData = {
       description:
         "Waffle de pan de yuca, Queso doble crema, Salsa de arequipe, Barquillo, Crema Chantilly, Helado.",
       price: 8500,
-      image: "/images/waffles/pan_yuca.jpg",
+      image: "/images/waffles/pan_yuca.webp",
       category: "Waffles",
     },
     {
@@ -348,7 +350,7 @@ export const productsData: ProductsData = {
       description:
         "Waffle, fresa, durazno, banano, kiwi, arequipe, salsa de chocolate y una bola de helado.",
       price: 9000,
-      image: "/images/waffles/frutas.jpg",
+      image: "/images/waffles/frutas.webp",
       category: "Waffles",
     },
     {
@@ -359,7 +361,7 @@ export const productsData: ProductsData = {
       description:
         "Waffle de chocolate, cobertura de chocolate, oreo triturado, m&m's, chocmelos, barquillos chantilly, helado y salsa de chocolate.",
       price: 10000,
-      image: "/images/waffles/chocolate.jpg",
+      image: "/images/waffles/chocolate.webp",
       category: "Waffles",
     },
   ],
@@ -372,7 +374,7 @@ export const productsData: ProductsData = {
       description:
         "Raspao', lechera, mango, fresa, maracuyá, guanábana, milo, helado, manzana, piña, banano.",
       price: 7000,
-      image: "/images/cholaos/cholao.jpg",
+      image: "/images/cholaos/cholao.webp",
       category: "Cholaos",
     },
     {
@@ -404,7 +406,7 @@ export const productsData: ProductsData = {
       color: "bg-amarillo",
       description: "Merengon, Chantilly, Crema de la casa.",
       price: 8500,
-      image: "/images/cholaos/merengon.jpg",
+      image: "/images/cholaos/merengon.webp",
       category: "Cholaos",
     },
     {
@@ -415,7 +417,7 @@ export const productsData: ProductsData = {
       description:
         "Banano, Fresa, 3 Bolas de helado, Crema Chantilly, Cobertura de chocolate , 2 salsas.",
       price: 9000,
-      image: "/images/cholaos/cono_xl.jpg",
+      image: "/images/cholaos/cono_xl.webp",
       category: "Cholaos",
     },
   ],
@@ -428,7 +430,7 @@ export const productsData: ProductsData = {
       description: "",
       variations: ["Con helado", "Sin helado"],
       price: 6000,
-      image: "/images/frappes/milo.jpg",
+      image: "/images/frappes/milo.webp",
       category: "Frappés",
     },
     {
@@ -439,7 +441,7 @@ export const productsData: ProductsData = {
       description: "",
       variations: ["Con helado", "Sin helado"],
       price: 6500,
-      image: "/images/frappes/cafe.jpg",
+      image: "/images/frappes/cafe.webp",
       category: "Frappés",
     },
     {
@@ -450,7 +452,7 @@ export const productsData: ProductsData = {
       description: "",
       variations: ["Con helado", "Sin helado"],
       price: 7000,
-      image: "/images/frappes/oreo.jpg",
+      image: "/images/frappes/oreo.webp",
       category: "Frappés",
     },
   ],
