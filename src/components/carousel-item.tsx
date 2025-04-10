@@ -37,14 +37,14 @@ const CarouselItem: React.FC<CarouselItemProps> = ({
  ${index}`}
     >
       <div
-        className={`w-1/2 absolute right-0 top-[48%] md:top-[57%] ${
+        className={`w-3/4 md:w-1/2 absolute right-0 top-[48%] md:top-[57%] ${
           isActive && "img-container"
         }`}
       >
         <img
           src={`/products/${item.image}`}
           alt={item.detail.title}
-          className="filter drop-shadow-[10px_10px_10px_rgba(0,0,0,0.2)] md:drop-shadow-[20px_20px_10px_rgba(0,0,0,0.2)] absolute right-0 -translate-y-1/2 transition-right duration-[1500ms] max-h-[500px] object-contain z-10"
+          className="product-image filter drop-shadow-[10px_10px_10px_rgba(0,0,0,0.2)] md:drop-shadow-[20px_20px_10px_rgba(0,0,0,0.2)] absolute right-0 -translate-y-1/2 transition-right duration-[1500ms] max-h-[500px] object-contain z-10"
           width={500}
           height={300}
           draggable="false"
@@ -52,7 +52,7 @@ const CarouselItem: React.FC<CarouselItemProps> = ({
         <img
           src={`/fruits/fresas.png`}
           alt={item.detail.title}
-          className="fruit filter drop-shadow-[10px_10px_10px_rgba(0,0,0,0.2)] md:drop-shadow-[20px_20px_10px_rgba(0,0,0,0.2)]  -translate-y-1/2 -translate-x-36 transition-right duration-[1500ms] max-h-[500px] object-contain"
+          className="fruit filter drop-shadow-[10px_10px_10px_rgba(0,0,0,0.2)] md:drop-shadow-[20px_20px_10px_rgba(0,0,0,0.2)]  -translate-y-1/2 w-full -translate-x-24 md:w-5/6 md:-translate-x-36 transition-right duration-[1500ms] max-h-[500px] object-contain"
           width={800}
           height={300}
           draggable="false"
@@ -76,26 +76,23 @@ const CarouselItem: React.FC<CarouselItemProps> = ({
         </button>
       </div>
       <div className="detail text-white flex flex-col gap-4">
-        <div className="title font-stopbuck leading-12">
+        <div className="title font-stopbuck leading-6 md:leading-12">
           {item.detail.title}
         </div>
         <div className="des font-myriad text-base font-normal leading-4">
           {item.detail.des}
         </div>
-        <div className="specifications flex pt-4">
+        <div className="specifications flex flex-col md:flex-row pt-4">
           {item.detail.specifications.map((spec, index) => (
-            <div key={index} className="flex-1 font-myriad text-base">
-              <p>{spec.label}</p>
+            <div key={index} className="font-myriad text-base">
+              <p className="font-amsi text-xl">{spec.label}</p>
               <p>{spec.value}</p>
             </div>
           ))}
         </div>
         <div className="checkout">
-          <button className="font-stopbuck rounded-xl cursor-pointer bg-transparent border border-[#5555] ml-[5px] px-2.5 py-1.5 tracking-widest font-medium">
-            {item.detail.checkout.addToCart}
-          </button>
           <button className="font-stopbuck rounded-xl cursor-pointer border border-[#5555] ml-[5px] px-2.5 py-1.5 tracking-widest font-medium bg-[#00c6da]">
-            {item.detail.checkout.checkout}
+            AÑADIR AL CARRITO
           </button>
         </div>
         <button

@@ -28,7 +28,6 @@ interface ProductCarouselProps {
 }
 
 function ProductCarousel({ items }: ProductCarouselProps) {
-  const [isAnimating, setIsAnimating] = useState(false);
   const [mainItemIndex, setMainItemIndex] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
@@ -38,29 +37,21 @@ function ProductCarousel({ items }: ProductCarouselProps) {
 
   const showSlider = useCallback(
     (type: "next" | "prev") => {
-      if (isAnimating || !carouselRef.current || !listRef.current) {
-        return;
-      }
-      setIsAnimating(true);
-      const nextButtonElement = document.getElementById("next");
-      const prevButtonElement = document.getElementById("prev");
-      if (nextButtonElement && prevButtonElement) {
-        nextButtonElement.style.pointerEvents = "none";
-        prevButtonElement.style.pointerEvents = "none";
-      }
+      if (!carouselRef.current || !listRef.current) return;
 
-      carouselRef.current.classList.remove("next", "prev");
       const listHTML = listRef.current;
       const itemsHTML = listHTML.querySelectorAll(".item");
 
+      carouselRef.current.classList.remove("next", "prev");
+
       if (type === "next") {
-        if (itemsHTML.length > 0 && listHTML) {
+        if (itemsHTML.length > 0) {
           listHTML.appendChild(itemsHTML[0]);
           carouselRef.current.classList.add("next");
           setMainItemIndex((prevIndex) => (prevIndex + 1) % items.length);
         }
       } else {
-        if (itemsHTML.length > 0 && listHTML) {
+        if (itemsHTML.length > 0) {
           listHTML.prepend(itemsHTML[itemsHTML.length - 1]);
           carouselRef.current.classList.add("prev");
           setMainItemIndex(
@@ -68,19 +59,8 @@ function ProductCarousel({ items }: ProductCarouselProps) {
           );
         }
       }
-
-      clearTimeout(animationTimeout.current as NodeJS.Timeout);
-      animationTimeout.current = setTimeout(() => {
-        const nextButtonElement = document.getElementById("next");
-        const prevButtonElement = document.getElementById("prev");
-        if (nextButtonElement && prevButtonElement) {
-          nextButtonElement.style.pointerEvents = "auto";
-          prevButtonElement.style.pointerEvents = "auto";
-          setIsAnimating(false);
-        }
-      }, 2000);
     },
-    [isAnimating, carouselRef, listRef, items.length]
+    [carouselRef, listRef, items.length]
   );
 
   const handleSeeMore = useCallback(() => {
