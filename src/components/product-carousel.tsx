@@ -5,9 +5,13 @@ import "./../styles/carousel-styles.css";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useColorStore } from "../store/colorStore";
 import CarouselItem from "./carousel-item";
-import { ProductList } from "../types/product";
+import { Product } from "../types/product";
 
-function ProductCarousel({ items }: ProductList) {
+interface Props {
+  items: Product[];
+}
+
+function ProductCarousel({ items }: Props) {
   const [mainItemIndex, setMainItemIndex] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
   const listRef = useRef<HTMLDivElement>(null);

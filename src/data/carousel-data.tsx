@@ -3,12 +3,14 @@ import { Product } from "../types/product";
 export const carouselData: Product[] = [
   {
     id: "1",
+    title: "Fresas con Crema as",
     name: "Fresas con Crema",
     description:
       "La combinación perfecta de fresas frescas y dulce crema batida. Un postre atemporal para disfrutar en cualquier momento.",
     image: "fresas.webp",
-    category: "Postres", //  O la categoría que corresponda
-    price: 5000, //  Un price de ejemplo
+    category: "Postres",
+    price: 5000,
+    color: "bg-amarillo",
     introduce: {
       title: "DELICIA CLÁSICA",
       topic: "Fresas con Crema",
@@ -28,12 +30,14 @@ export const carouselData: Product[] = [
   },
   {
     id: "2",
+    title: "Fresas con Crema as",
     name: "Maracu mango",
     description:
       "Una refrescante mezcla de la acidez del maracuyá y la dulzura del mango. ¡Un sabor que te transportará al paraíso!",
     image: "maracumango.webp",
     category: "Bebidas", //  O la categoría que corresponda
     price: 7000, //  Un price de ejemplo
+    color: "bg-amarillo",
     introduce: {
       title: "EXPLOSIÓN TROPICAL",
       topic: "Maracu mango",
@@ -53,12 +57,14 @@ export const carouselData: Product[] = [
   },
   {
     id: "3",
+    title: "Fresas con Crema as",
     name: "Parfait Helado",
     description:
       "Un delicioso parfait con capas de helado cremoso, granola crujiente y frutas frescas. ¡Una experiencia multisensorial!",
     image: "parfait.webp",
     category: "Postres", //  O la categoría que corresponda
     price: 8000, //  Un price de ejemplo
+    color: "bg-amarillo",
     introduce: {
       title: "CAPAS DE SABOR",
       topic: "Parfait Helado",
@@ -78,12 +84,14 @@ export const carouselData: Product[] = [
   },
   {
     id: "4",
+    title: "Fresas con Crema as",
     name: "Salpicón de Frutas",
     description:
       "Una refrescante y colorida mezcla de frutas tropicales bañadas en un dulce jugo. ¡La opción más saludable y deliciosa!",
     image: "salpicon.webp",
     category: "Bebidas", //  O la categoría que corresponda
     price: 6000, //  Un price de ejemplo
+    color: "bg-amarillo",
     introduce: {
       title: "FIESTA DE FRUTAS",
       topic: "Salpicón de Frutas",
@@ -103,12 +111,14 @@ export const carouselData: Product[] = [
   },
   {
     id: "5",
+    title: "Fresas con Crema as",
     name: "Soda de Sandía",
     description:
       "Una bebida burbujeante con el dulce sabor de la sandía fresca y un toque cítrico. ¡Perfecta para quitar la sed!",
     image: "sodaSandia.webp",
     category: "Bebidas", //  O la categoría que corresponda
     price: 5500, //  Un price de ejemplo
+    color: "bg-amarillo",
     introduce: {
       title: "BURBUJAS REFRESCANTES",
       topic: "Soda de Sandía",

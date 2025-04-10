@@ -8,7 +8,7 @@ export const CarouselItem = ({
   isActive,
   index,
 }: CarouselItemProps) => {
-  const { detail, introduce } = item;
+  const { name, description, title, detail } = item;
 
   const addItem = useCartStore((state) => state.addItem);
 
@@ -24,7 +24,7 @@ export const CarouselItem = ({
       >
         <img
           src={`/products/${item.image}`}
-          alt={detail.title}
+          alt={name}
           className="product-image filter drop-shadow-[10px_10px_10px_rgba(0,0,0,0.2)] md:drop-shadow-[20px_20px_10px_rgba(0,0,0,0.2)] absolute right-0 -translate-y-1/2 transition-right duration-[1500ms] max-h-[500px] object-contain z-10"
           width={500}
           height={300}
@@ -32,7 +32,7 @@ export const CarouselItem = ({
         />
         <img
           src={`/fruits/fresas.png`}
-          alt={detail.title}
+          alt={name}
           className="fruit filter drop-shadow-[10px_10px_10px_rgba(0,0,0,0.2)] md:drop-shadow-[20px_20px_10px_rgba(0,0,0,0.2)]  -translate-y-1/2 w-full -translate-x-24 md:w-5/6 md:-translate-x-36 transition-right duration-[1500ms] max-h-[500px] object-contain"
           width={800}
           height={300}
@@ -41,13 +41,13 @@ export const CarouselItem = ({
       </div>
       <div className="introduce text-white flex flex-col gap-4 w-auto items-start">
         <div className="title text-2xl font-extrabold whitespace-nowraps">
-          {introduce.title}
+          {title}
         </div>
         <div className="topic text-[40px] md:text-5xl font-stopbuck leading-9 md:leading-12">
-          {introduce.topic}
+          {name}
         </div>
         <div className="des text-white font-myriad text-lg font-normal leading-6 overflow-visible">
-          {introduce.des}
+          {description}
         </div>
         <button
           className="seeMore text-white font-stopbuck mt-5 text-xl bg-transparent hover:bg-[#00c6da] border-b-2 cursor-pointer"
@@ -58,13 +58,13 @@ export const CarouselItem = ({
       </div>
       <div className="detail text-white flex flex-col gap-4">
         <div className="title font-stopbuck leading-6 md:leading-12">
-          {detail.title}
+          {title}
         </div>
         <div className="des font-myriad text-base font-normal leading-4">
-          {detail.des}
+          {description}
         </div>
         <div className="specifications flex flex-col md:flex-row pt-4">
-          {detail.specifications.map((spec, index) => (
+          {detail?.specifications?.map((spec, index) => (
             <div key={index} className="font-myriad text-base">
               <p className="font-amsi text-xl">{spec.label}</p>
               <p>{spec.value}</p>

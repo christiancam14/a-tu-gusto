@@ -5,6 +5,8 @@ export interface Product {
   price: number;
   image: string;
   category: string;
+  title: string;
+  color: "bg-azul" | "bg-amarillo" | "bg-rojo";
   variations?: string[];
   flavors?: string[];
   introduce?: Introduce;

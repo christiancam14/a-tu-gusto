@@ -25,7 +25,9 @@ export const productsData: ProductsData = {
   Obleas: [
     {
       id: "1",
+      title: "Fresas con Crema as",
       name: "Oblea de Arequipe",
+      color: "bg-amarillo",
       description: "",
       price: 5000,
       image: "/images/obleas/arequipe.jpg",
@@ -33,7 +35,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "2",
+      title: "Fresas con Crema as",
       name: "Oblea de Arequipe, queso",
+      color: "bg-amarillo",
       description: "",
       price: 6000,
       image: "/images/obleas/arequipe_queso.jpg",
@@ -41,7 +45,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "3",
+      title: "Fresas con Crema as",
       name: "Oblea de Arequipe, queso, chantilly y salsa de frutos rojos",
+      color: "bg-amarillo",
       description: "",
       price: 7000,
       image: "/images/obleas/arequipe_queso_chantilly_frutosrojos.jpg",
@@ -49,7 +55,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "4",
+      title: "Fresas con Crema as",
       name: "Oblea de Arequipe, queso, salsa de frutos rojos, chantilly, fresa",
+      color: "bg-amarillo",
       description: "",
       price: 8000,
       image: "/images/obleas/arequipe_queso_frutosrojos_chantilly_fresa.jpg",
@@ -59,7 +67,9 @@ export const productsData: ProductsData = {
   Ensaladas: [
     {
       id: "5",
+      title: "Fresas con Crema as",
       name: "Ensalada especial",
+      color: "bg-amarillo",
       description:
         "Mango, banano, piña en almíbar, papaya, patilla, melón, crema de la casa, manzana, fresa, queso, granola, kiwi, durazno, chantilly, cereza y 2 sabores de helado.",
       price: 12000,
@@ -68,7 +78,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "6",
+      title: "Fresas con Crema as",
       name: "Ensalada pequeña",
+      color: "bg-amarillo",
       description:
         "Mango, banano, piña en almíbar, papaya, patilla, melón, crema de la casa, manzana, fresa, queso, granola y helado",
       price: 8000,
@@ -79,7 +91,9 @@ export const productsData: ProductsData = {
   Malteadas: [
     {
       id: "7",
+      title: "Fresas con Crema as",
       name: "Brownie",
+      color: "bg-amarillo",
       description:
         "Malteada de chocolate, nutella, mini chips, brownie, chantilly, oreo triturada, salsa de arequipe, Galleta oreo, salsa de chocolate.",
       price: 10000,
@@ -88,7 +102,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "8",
+      title: "Fresas con Crema as",
       name: "Waffle",
+      color: "bg-amarillo",
       description:
         "Malteada de frutos rojos, chantilly, waffle, chocmelos, maní, arequipe, fresas, salsa de chocolate y de frutos rojos",
       price: 11000,
@@ -97,7 +113,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "9",
+      title: "Fresas con Crema as",
       name: "Sweet Ron",
+      color: "bg-amarillo",
       description:
         "Malteada de 3 leches con ron, nutella, chantilly, oreo triturado, salsa de chocolate, chocmelos, barquillo.",
       price: 12000,
@@ -106,7 +124,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "10",
+      title: "Fresas con Crema as",
       name: "Cono",
+      color: "bg-amarillo",
       description:
         "Malteada de vainilla arequipe, m&m's. cono, chantilly, golochips salsa de frutos rojos, marshmallows, pepitas de colores.",
       price: 10000,
@@ -115,7 +135,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "11",
+      title: "Fresas con Crema as",
       name: "Strawberry",
+      color: "bg-amarillo",
       description:
         "Malteada de maracuyá chantilly, arequipe. chococrispys, salsa de chocolate, chocmelos y fresas.",
       price: 11000,
@@ -126,7 +148,9 @@ export const productsData: ProductsData = {
   Infantil: [
     {
       id: "12",
+      title: "Fresas con Crema as",
       name: "Pollito",
+      color: "bg-amarillo",
       description: "",
       price: 6000,
       image: "/images/infantil/pollito.jpg",
@@ -134,7 +158,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "13",
+      title: "Fresas con Crema as",
       name: "Payasito",
+      color: "bg-amarillo",
       description: "",
       price: 6500,
       image: "/images/infantil/payasito.jpg",
@@ -142,7 +168,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "14",
+      title: "Fresas con Crema as",
       name: "Osito",
+      color: "bg-amarillo",
       description: "",
       price: 6500,
       image: "/images/infantil/osito.jpg",
@@ -150,7 +178,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "15",
+      title: "Fresas con Crema as",
       name: "Arañita",
+      color: "bg-amarillo",
       description: "",
       price: 6000,
       image: "/images/infantil/aranita.jpg",
@@ -158,7 +188,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "16",
+      title: "Fresas con Crema as",
       name: "Buho",
+      color: "bg-amarillo",
       description: "",
       price: 7000,
       image: "/images/infantil/buho.jpg",
@@ -166,7 +198,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "17",
+      title: "Fresas con Crema as",
       name: "Mariposa",
+      color: "bg-amarillo",
       description: "",
       price: 7000,
       image: "/images/infantil/mariposa.jpg",
@@ -174,7 +208,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "18",
+      title: "Fresas con Crema as",
       name: "Gatico",
+      color: "bg-amarillo",
       description: "",
       price: 6500,
       image: "/images/infantil/gatico.jpg",
@@ -182,7 +218,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "19",
+      title: "Fresas con Crema as",
       name: "Gusanito",
+      color: "bg-amarillo",
       description: "",
       price: 6000,
       image: "/images/infantil/gusanito.jpg",
@@ -190,7 +228,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "20",
+      title: "Fresas con Crema as",
       name: "Ratoncito",
+      color: "bg-amarillo",
       description: "",
       price: 7000,
       image: "/images/infantil/ratoncito.jpg",
@@ -200,7 +240,9 @@ export const productsData: ProductsData = {
   Copas: [
     {
       id: "21",
+      title: "Fresas con Crema as",
       name: "Maracumango",
+      color: "bg-amarillo",
       description:
         "Chantilly, maracuyá, (mango, piña), helado, lechera, barquillo.",
       price: 9000,
@@ -209,7 +251,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "23",
+      title: "Fresas con Crema as",
       name: "Gelatina con Helado",
+      color: "bg-amarillo",
       description:
         "Gelatina, 2 bolas de helado, queso, chantilly, morita, salsa de frutos rojos, pepitas de colores, barquillo, crema de la casa.",
       price: 8500,
@@ -218,7 +262,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "24",
+      title: "Fresas con Crema as",
       name: "Copa durazno",
+      color: "bg-amarillo",
       description:
         "2 bolas de helado, chantillí, durazno, arequipe, lluvia de chocolate.",
       price: 8000,
@@ -227,7 +273,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "25",
+      title: "Fresas con Crema as",
       name: "Fresas con crema",
+      color: "bg-amarillo",
       description: "Chantilly, helado, salsa de frutos rojos, fresa, cereza.",
       price: 7500,
       image: "/images/copas/fresas_crema.jpg",
@@ -235,7 +283,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "26",
+      title: "Fresas con Crema as",
       name: "Copa de Baileys",
+      color: "bg-amarillo",
       description:
         "Malteada, crema de baileys, chantilly, oreo triturado, gala.",
       price: 10000,
@@ -246,7 +296,9 @@ export const productsData: ProductsData = {
   Crepes: [
     {
       id: "27",
+      title: "Fresas con Crema as",
       name: "Crepe Tropical",
+      color: "bg-amarillo",
       description:
         "Tortilla, salsa de arequipe, salsa de frutos rojos, piña en almíbar, maracuyá, chantilly y helado.",
       price: 9000,
@@ -255,7 +307,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "28",
+      title: "Fresas con Crema as",
       name: "Crepe Choco-fresa",
+      color: "bg-amarillo",
       description:
         "Tortilla, Crema de la casa, Fresa, Crema Chantilly, Salsa de chocolate, Cobertura de chocolate, Helado.",
       price: 9500,
@@ -264,7 +318,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "29",
+      title: "Fresas con Crema as",
       name: "Crepe",
+      color: "bg-amarillo",
       description:
         "Tortilla, Nutella, banano, fresa, salsa de chocolate, chantilly y helado.",
       price: 10000,
@@ -275,7 +331,9 @@ export const productsData: ProductsData = {
   Waffles: [
     {
       id: "30",
+      title: "Fresas con Crema as",
       name: "Waffle Pan de Yuca",
+      color: "bg-amarillo",
       description:
         "Waffle de pan de yuca, Queso doble crema, Salsa de arequipe, Barquillo, Crema Chantilly, Helado.",
       price: 8500,
@@ -284,7 +342,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "31",
+      title: "Fresas con Crema as",
       name: "Waffle",
+      color: "bg-amarillo",
       description:
         "Waffle, fresa, durazno, banano, kiwi, arequipe, salsa de chocolate y una bola de helado.",
       price: 9000,
@@ -293,7 +353,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "32",
+      title: "Fresas con Crema as",
       name: "Waffle éxtasis de chocolate",
+      color: "bg-amarillo",
       description:
         "Waffle de chocolate, cobertura de chocolate, oreo triturado, m&m's, chocmelos, barquillos chantilly, helado y salsa de chocolate.",
       price: 10000,
@@ -304,7 +366,9 @@ export const productsData: ProductsData = {
   Cholaos: [
     {
       id: "33",
+      title: "Fresas con Crema as",
       name: "Cholao",
+      color: "bg-amarillo",
       description:
         "Raspao', lechera, mango, fresa, maracuyá, guanábana, milo, helado, manzana, piña, banano.",
       price: 7000,
@@ -313,7 +377,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "34",
+      title: "Fresas con Crema as",
       name: "Parfait",
+      color: "bg-amarillo",
       description:
         "Yogurt, granola, mango, fresa, banano, chantilly, manzana, salsa de frutos rojos.",
       price: 7500,
@@ -322,7 +388,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "35",
+      title: "Fresas con Crema as",
       name: "Matrimonio",
+      color: "bg-amarillo",
       description:
         "Guanábana, salpicón, queso, lechera, manzana, bola de helado.",
       price: 8000,
@@ -331,7 +399,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "36",
+      title: "Fresas con Crema as",
       name: "Merengón",
+      color: "bg-amarillo",
       description: "Merengon, Chantilly, Crema de la casa.",
       price: 8500,
       image: "/images/cholaos/merengon.jpg",
@@ -339,7 +409,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "37",
+      title: "Fresas con Crema as",
       name: "Cono XL",
+      color: "bg-amarillo",
       description:
         "Banano, Fresa, 3 Bolas de helado, Crema Chantilly, Cobertura de chocolate , 2 salsas.",
       price: 9000,
@@ -350,7 +422,9 @@ export const productsData: ProductsData = {
   Frappés: [
     {
       id: "38",
+      title: "Fresas con Crema as",
       name: "Milo",
+      color: "bg-amarillo",
       description: "",
       variations: ["Con helado", "Sin helado"],
       price: 6000,
@@ -359,7 +433,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "39",
+      title: "Fresas con Crema as",
       name: "Café",
+      color: "bg-amarillo",
       description: "",
       variations: ["Con helado", "Sin helado"],
       price: 6500,
@@ -368,7 +444,9 @@ export const productsData: ProductsData = {
     },
     {
       id: "40",
+      title: "Fresas con Crema as",
       name: "Oreo",
+      color: "bg-amarillo",
       description: "",
       variations: ["Con helado", "Sin helado"],
       price: 7000,
