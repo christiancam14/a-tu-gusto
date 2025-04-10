@@ -125,7 +125,7 @@ function ProductCarousel({ items }: ProductCarouselProps) {
 
   return (
     <div
-      className="carousel relative h-[600px] md:h-[800px] overflow-hidden -mt-12"
+      className="carousel relative h-[650px] md:h-[800px] overflow-hidden -mt-12"
       ref={carouselRef}
     >
       <div

@@ -37,7 +37,7 @@ const CarouselItem: React.FC<CarouselItemProps> = ({
  ${index}`}
     >
       <div
-        className={`w-1/2 absolute right-0 top-[57%] ${
+        className={`w-1/2 absolute right-0 top-[48%] md:top-[57%] ${
           isActive && "img-container"
         }`}
       >
@@ -59,13 +59,13 @@ const CarouselItem: React.FC<CarouselItemProps> = ({
         />
       </div>
       <div className="introduce text-white flex flex-col gap-4 w-auto items-start">
-        <div className="title text-2xl font-extrabold ">
+        <div className="title text-2xl font-extrabold whitespace-nowraps">
           {item.introduce.title}
         </div>
-        <div className="topic text-4xl md:text-5xl font-stopbuck leading-12">
+        <div className="topic text-[40px] md:text-5xl font-stopbuck leading-9 md:leading-12">
           {item.introduce.topic}
         </div>
-        <div className="des text-white font-myriad text-base font-normal leading-4">
+        <div className="des text-white font-myriad text-lg font-normal leading-6 overflow-visible">
           {item.introduce.des}
         </div>
         <button

@@ -307,8 +307,7 @@
   }
   .carousel .list .item:nth-child(2) .introduce .des,
   .carousel.showDetail .list .item:nth-child(2) .detail .des {
-    height: 100px;
-    overflow: auto;
+    /* height: 100px; */
   }
   .carousel.showDetail .list .item:nth-child(2) .detail .checkout {
     display: flex;
