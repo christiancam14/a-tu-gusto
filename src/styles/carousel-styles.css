@@ -35,6 +35,10 @@
   }
 }
 
+* img {
+  user-drag: none;
+}
+
 .item .img-container {
   width: 100%;
   animation: productAnimation 5s linear infinite;
