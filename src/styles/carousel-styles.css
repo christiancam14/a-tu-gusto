@@ -295,7 +295,7 @@
 }
 @media screen and (max-width: 767px) {
   .carousel .list .item:nth-child(2) .introduce {
-    width: 50%;
+    width: 54%;
   }
 
   .carousel .list .item img {

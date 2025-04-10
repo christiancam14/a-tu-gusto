@@ -143,7 +143,7 @@ function ProductCarousel({ items }: ProductCarouselProps) {
           />
         ))}
       </div>
-      <div className="absolute bottom-20 w-[1140px] max-w-[93%] flex justify-between left-1/2 -translate-x-1/2">
+      <div className="absolute bottom-0 md:bottom-20 w-[1140px] max-w-1/2 md:max-w-[93%] flex justify-between left-1/2 -translate-x-1/2">
         <button
           id="prev"
           onClick={() => showSlider("prev")}

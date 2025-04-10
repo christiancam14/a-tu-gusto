@@ -58,11 +58,11 @@ const CarouselItem: React.FC<CarouselItemProps> = ({
           draggable="false"
         />
       </div>
-      <div className="introduce text-white flex flex-col gap-4 items-start">
+      <div className="introduce text-white flex flex-col gap-4 w-auto items-start">
         <div className="title text-2xl font-extrabold ">
           {item.introduce.title}
         </div>
-        <div className="topic text-5xl font-stopbuck leading-12">
+        <div className="topic text-4xl md:text-5xl font-stopbuck leading-12">
           {item.introduce.topic}
         </div>
         <div className="des text-white font-myriad text-base font-normal leading-4">

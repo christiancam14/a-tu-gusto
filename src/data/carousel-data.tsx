@@ -31,7 +31,7 @@ export const carouselData = [
     color: "bg-rojo",
     introduce: {
       title: "EXPLOSIÓN TROPICAL",
-      topic: "Maracumango",
+      topic: "Maracu mango",
       des: "Una refrescante mezcla de la acidez del maracuyá y la dulzura del mango. ¡Un sabor que te transportará al paraíso!",
     },
     detail: {
