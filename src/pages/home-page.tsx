@@ -10,7 +10,6 @@ export const HomePage = () => {
 
   const selectedProducts: Product[] = [
     productsData.Cholaos[1],
-    productsData.Cholaos[1],
     productsData.Cholaos[2],
     productsData.Copas[0],
   ];
