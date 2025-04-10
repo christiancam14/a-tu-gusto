@@ -10,7 +10,7 @@ export const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 w-full backdrop-blur-sm z-10 p-4">
       <SectionLayout
-        className={`mx-auto max-w-screen-xl p-4 sm:px-6 lg:px-8 shadow-lg rounded-2xl transition-colors duration-700 ease-in-out ${
+        className={`mx-auto max-w-screen-xl px-6 py-4 sm:px-6 lg:px-8 shadow-lg rounded-2xl transition-colors duration-700 ease-in-out ${
           ColorClass === "bg-amarillo" ? "bg-rojo" : "bg-amarillo"
         }`}
       >
@@ -29,15 +29,15 @@ export const Navbar = () => {
           </div>
 
           <div className="md:flex md:items-center md:gap-12">
-            <nav aria-label="Global" className="hidden md:block">
+            <nav aria-label="Global" className="block">
               <ul className="flex items-center gap-6 text-md">
                 <li>
                   <a
                     className="text-white transition hover:text-white/65 font-myriad"
-                    href=""
+                    href="#"
                   >
                     {" "}
-                    Services{" "}
+                    Menú{" "}
                   </a>
                 </li>
 
@@ -47,23 +47,11 @@ export const Navbar = () => {
                     href="#"
                   >
                     {" "}
-                    Projects{" "}
+                    Contacto{" "}
                   </a>
                 </li>
-
-                <li>
-                  <a
-                    className="text-white transition hover:text-white/65 font-myriad"
-                    href="#"
-                  >
-                    {" "}
-                    Blog{" "}
-                  </a>
-                </li>
-                <a href="/carrito">
-                  <button>
-                    <ShoppingCart />
-                  </button>
+                <a href="/carrito" className="cursor-pointer">
+                  <ShoppingCart />
                 </a>
               </ul>
             </nav>
