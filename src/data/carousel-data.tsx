@@ -1,15 +1,21 @@
-export const carouselData = [
+import { Product } from "../types/product";
+
+export const carouselData: Product[] = [
   {
     id: "1",
+    name: "Fresas con Crema",
+    description:
+      "La combinación perfecta de fresas frescas y dulce crema batida. Un postre atemporal para disfrutar en cualquier momento.",
     image: "fresas.webp",
-    color: "bg-amarillo",
+    category: "Postres", //  O la categoría que corresponda
+    price: 5000, //  Un price de ejemplo
     introduce: {
       title: "DELICIA CLÁSICA",
       topic: "Fresas con Crema",
       des: "La combinación perfecta de fresas frescas y dulce crema batida. Un postre atemporal para disfrutar en cualquier momento.",
     },
     detail: {
-      title: "Fresas con Crema Premium",
+      title: "Fresas con Crema Tradicional",
       des: "Elaborado con las fresas más jugosas de temporada y una crema chantilly suave y ligera. ¡Un verdadero placer para tu paladar!",
       specifications: [
         {
@@ -18,16 +24,16 @@ export const carouselData = [
         },
         { label: "Porción", value: "200 gramos" },
       ],
-      checkout: {
-        addToCart: "AÑADIR AL CARRITO",
-        checkout: "COMPRAR AHORA",
-      },
     },
   },
   {
     id: "2",
+    name: "Maracu mango",
+    description:
+      "Una refrescante mezcla de la acidez del maracuyá y la dulzura del mango. ¡Un sabor que te transportará al paraíso!",
     image: "maracumango.webp",
-    color: "bg-rojo",
+    category: "Bebidas", //  O la categoría que corresponda
+    price: 7000, //  Un price de ejemplo
     introduce: {
       title: "EXPLOSIÓN TROPICAL",
       topic: "Maracu mango",
@@ -43,16 +49,16 @@ export const carouselData = [
         },
         { label: "Porción", value: "250 ml" },
       ],
-      checkout: {
-        addToCart: "AÑADIR AL CARRITO",
-        checkout: "COMPRAR AHORA",
-      },
     },
   },
   {
     id: "3",
+    name: "Parfait Helado",
+    description:
+      "Un delicioso parfait con capas de helado cremoso, granola crujiente y frutas frescas. ¡Una experiencia multisensorial!",
     image: "parfait.webp",
-    color: "bg-azul",
+    category: "Postres", //  O la categoría que corresponda
+    price: 8000, //  Un price de ejemplo
     introduce: {
       title: "CAPAS DE SABOR",
       topic: "Parfait Helado",
@@ -68,16 +74,16 @@ export const carouselData = [
         },
         { label: "Porción", value: "300 gramos" },
       ],
-      checkout: {
-        addToCart: "AÑADIR AL CARRITO",
-        checkout: "COMPRAR AHORA",
-      },
     },
   },
   {
     id: "4",
+    name: "Salpicón de Frutas",
+    description:
+      "Una refrescante y colorida mezcla de frutas tropicales bañadas en un dulce jugo. ¡La opción más saludable y deliciosa!",
     image: "salpicon.webp",
-    color: "bg-amarillo",
+    category: "Bebidas", //  O la categoría que corresponda
+    price: 6000, //  Un price de ejemplo
     introduce: {
       title: "FIESTA DE FRUTAS",
       topic: "Salpicón de Frutas",
@@ -93,16 +99,16 @@ export const carouselData = [
         },
         { label: "Porción", value: "400 ml" },
       ],
-      checkout: {
-        addToCart: "AÑADIR AL CARRITO",
-        checkout: "COMPRAR AHORA",
-      },
     },
   },
   {
     id: "5",
+    name: "Soda de Sandía",
+    description:
+      "Una bebida burbujeante con el dulce sabor de la sandía fresca y un toque cítrico. ¡Perfecta para quitar la sed!",
     image: "sodaSandia.webp",
-    color: "bg-azul",
+    category: "Bebidas", //  O la categoría que corresponda
+    price: 5500, //  Un price de ejemplo
     introduce: {
       title: "BURBUJAS REFRESCANTES",
       topic: "Soda de Sandía",
@@ -118,10 +124,6 @@ export const carouselData = [
         },
         { label: "Porción", value: "350 ml" },
       ],
-      checkout: {
-        addToCart: "AÑADIR AL CARRITO",
-        checkout: "COMPRAR AHORA",
-      },
     },
   },
 ];

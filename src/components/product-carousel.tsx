@@ -5,29 +5,9 @@ import "./../styles/carousel-styles.css";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useColorStore } from "../store/colorStore";
 import CarouselItem from "./carousel-item";
+import { ProductList } from "../types/product";
 
-interface ProductCarouselProps {
-  items: {
-    image: string;
-    color: string;
-    introduce: {
-      title: string;
-      topic: string;
-      des: string;
-    };
-    detail: {
-      title: string;
-      des: string;
-      specifications: { label: string; value: string }[];
-      checkout: {
-        addToCart: string;
-        checkout: string;
-      };
-    };
-  }[];
-}
-
-function ProductCarousel({ items }: ProductCarouselProps) {
+function ProductCarousel({ items }: ProductList) {
   const [mainItemIndex, setMainItemIndex] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
   const listRef = useRef<HTMLDivElement>(null);

@@ -1,8 +1,8 @@
 "use client";
 
-import { ShoppingCart } from "lucide-react";
 import { SectionLayout } from "./section-layout";
 import { useColorStore } from "../store/colorStore";
+import { NavCartBtn } from "../components/nav-cart-btn";
 
 export const Navbar = () => {
   const ColorClass = useColorStore((state) => state.ColorClass);
@@ -34,7 +34,7 @@ export const Navbar = () => {
                 <li>
                   <a
                     className="text-white transition hover:text-white/65 font-myriad"
-                    href="#"
+                    href="menu"
                   >
                     {" "}
                     Menú{" "}
@@ -44,14 +44,14 @@ export const Navbar = () => {
                 <li>
                   <a
                     className="text-white transition hover:text-white/65 font-myriad"
-                    href="#"
+                    href="contacto"
                   >
                     {" "}
                     Contacto{" "}
                   </a>
                 </li>
                 <a href="/carrito" className="cursor-pointer">
-                  <ShoppingCart />
+                  <NavCartBtn />
                 </a>
               </ul>
             </nav>
