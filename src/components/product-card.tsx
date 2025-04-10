@@ -20,11 +20,11 @@ export const ProductCard = ({ product }: Props) => {
             />
           </div>
           <div className="h-full w-full grid place-items-center items-center animate-float">
-            <div className="absolute w-full transform rotate-[-30deg] scale-125 translate-x-[-10%] transition-transform duration-300 ease-in-out shoe-4">
+            <div className="absolute flex items-center justify-center w-full transform rotate-[-30deg] scale-125 translate-x-[-5%] transition-transform duration-300 ease-in-out">
               <img
                 src={`products/${product.image}`}
                 alt={product.name}
-                className="w-full"
+                className="max-w-5/6 max-h-60"
               />
             </div>
           </div>
