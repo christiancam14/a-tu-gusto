@@ -246,7 +246,7 @@ export const productsData: ProductsData = {
       description:
         "Chantilly, maracuyá, (mango, piña), helado, lechera, barquillo.",
       price: 9000,
-      image: "/images/copas/maracumango.jpg",
+      image: "maracumango.webp",
       category: "Copas",
     },
     {
@@ -383,7 +383,7 @@ export const productsData: ProductsData = {
       description:
         "Yogurt, granola, mango, fresa, banano, chantilly, manzana, salsa de frutos rojos.",
       price: 7500,
-      image: "/images/cholaos/parfait.jpg",
+      image: "parfait.webp",
       category: "Cholaos",
     },
     {
@@ -394,7 +394,7 @@ export const productsData: ProductsData = {
       description:
         "Guanábana, salpicón, queso, lechera, manzana, bola de helado.",
       price: 8000,
-      image: "/images/cholaos/matrimonio.jpg",
+      image: "salpicon.webp",
       category: "Cholaos",
     },
     {

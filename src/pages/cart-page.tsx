@@ -6,7 +6,6 @@ import { useColorStore } from "../store/colorStore";
 export const CartPage = () => {
   const ColorClass = useColorStore((state) => state.ColorClass);
   const cart = useCartStore((state) => state.cart);
-  
 
   const total = cart.reduce(
     (acc, item) => acc + item.quantity * (item.price || 0),
