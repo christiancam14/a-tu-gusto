@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# Deploy artifacts
+deploy.zip
+dist_*.zip
+*.zip
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
