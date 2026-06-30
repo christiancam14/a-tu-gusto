@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { Footer } from "./components/footer";
 import { Navbar } from "./layouts/navbar";
 import { HomePage } from "./pages/home-page";
 import { ContactPage } from "./pages/contact-page";
@@ -10,20 +11,22 @@ import ProductPage from "./pages/product-page";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="flex flex-col min-h-svh">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/menu" element={<MenuPage />} />
-          <Route path="/contacto" element={<ContactPage />} />
-          <Route path="/carrito" element={<CartPage />} />
-          <Route path="/productos/:slug" element={<ProductPage />} />
-          {/* Add more routes as needed */}
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/menu" element={<MenuPage />} />
+            <Route path="/contacto" element={<ContactPage />} />
+            <Route path="/carrito" element={<CartPage />} />
+            <Route path="/productos/:slug" element={<ProductPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
