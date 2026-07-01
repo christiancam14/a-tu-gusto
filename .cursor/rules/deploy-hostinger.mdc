@@ -1,0 +1,50 @@
+---
+description: Deploy de heladeria-site a Hostinger (dominio, build y MCP)
+alwaysApply: true
+---
+
+# Deploy — Heladería A Tu Gusto
+
+## Proyecto y dominio
+
+| Campo | Valor |
+|-------|--------|
+| Proyecto | `heladeria-site` (Vite + React + TypeScript) |
+| Dominio producción | `heladeria.christiancamachodev.com` |
+| URL | https://heladeria.christiancamachodev.com/ |
+| GitHub | `https://github.com/christiancam14/a-tu-gusto.git` |
+| Rama | `master` |
+
+No usar `heladeria.christiancamacho.dev` — no está en Hostinger.
+
+## Build
+
+```bash
+npm run build
+```
+
+- Salida: `dist/`
+- SPA: `public/.htaccess` se copia a `dist/` (rutas `/menu`, `/contacto`, etc.)
+- No es Laravel/Composer — ignorar consejos de `composer.lock`
+
+## Deploy preferido (MCP Hostinger)
+
+1. `npm run build` localmente
+2. Crear zip del **contenido** de `dist/` (no el código fuente)
+3. MCP `hosting_deployStaticWebsite`:
+   - `domain`: `heladeria.christiancamachodev.com`
+   - `archivePath`: ruta absoluta al zip de `dist/`
+4. Verificar: `https://heladeria.christiancamachodev.com/` y `/menu` (HTTP 200, bundle en `/assets/`)
+
+## Deploy alternativo (Git en hPanel)
+
+Si el usuario reconecta Git en Hostinger:
+
+- Tipo: **Vite** / Node.js (no Laravel)
+- Install: `npm install` | Build: `npm run build` | Output: `dist` | Node: 20 o 22
+
+`hosting_deployJsApplication` suele fallar si Node.js no está habilitado en el dominio.
+
+## Al pedir "despliega"
+
+No hace falta repetir el dominio; usar la tabla de arriba. Listar sitios con `hosting_listWebsitesV1` si hay duda.
